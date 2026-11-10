@@ -28,10 +28,12 @@ Through hands-on notebooks and applied case studies, students work with geospati
 - Develop deep-learning models for object detection and image segmentation
 - Use GPU computing for high-performance urban analysis
 - Explore practical applications of large language models in urban research
+- Build AI agents from scratch and with LangGraph
+- Run open-weight models locally and ground them in your own documents with RAG
 
 ## Technology stack
 
-`Python` · `GeoPandas` · `Fiona` · `Shapely` · `Rasterio` · `GDAL` · `scikit-learn` · `PyCUDA` · `Jupyter`
+`Python` · `GeoPandas` · `Fiona` · `Shapely` · `Rasterio` · `GDAL` · `scikit-learn` · `PyCUDA` · `LangGraph` · `Ollama` · `Chroma` · `Jupyter`
 
 ## Getting started
 
@@ -71,6 +73,8 @@ New to the setup process? See the guides for [installing Anaconda](lab1-basics-p
 | 08 | [Object detection](#lab-08--mask-r-cnn-for-object-detection) | Mask R-CNN, LabelMe, and fine-tuning |
 | 09 | [Image segmentation](#lab-09--image-segmentation) | U-Net building extraction and street-level semantic segmentation |
 | 10 | [Large language models](#lab-10--large-language-models) | Text and image analysis with the OpenAI API |
+| 11 | [AI agents](#lab-11--ai-agents) | Agent loops, tool use, state, and LangGraph |
+| 12 | [Local AI and RAG](#lab-12--local-ai-and-rag) | Ollama, open-weight models, embeddings, RAG, and agentic RAG |
 
 ### Lab 01 · Python programming fundamentals
 
@@ -137,6 +141,21 @@ Read the paper of [Attention is All You Need](https://papers.neurips.cc/paper/71
 <!-- - [Use the OpenAI API for text and image analysis](lab10-llms/openai-llm.ipynb) -->
 
 - [OpenAI API](lab10-llms/OpenAI_API_Simple_Urban_Demos.ipynb)
+
+### Lab 11 · AI agents
+
+Build an AI agent step by step, then implement a structured agent workflow with LangGraph.
+
+- [11.1 Agent from scratch](lab11-ai-agent/agent_from_scratch.ipynb)
+- [11.2 Build agent with LangGraph](lab11-ai-agent/building_agents_with_langgraph.ipynb)
+
+### Lab 12 · Local AI and RAG
+
+Run an open-weight language model on your own laptop with Ollama, then build a private planning assistant that answers questions from a zoning code with citations — and turn search into a tool for an agent.
+
+- [Step-by-step tutorial](lab12-local-ai-rag/README.md)
+- [Reading list](lab12-local-ai-rag/READING_LIST.md)
+
 ---
 
 ## Repository structure
@@ -150,11 +169,13 @@ ai-urban-sustainability/
 ├── lab6-machine-learning/
 ├── lab9-image-segmentation/
 ├── lab10-llms/
+├── lab11-ai-agent/
+├── lab12-local-ai-rag/
 ├── env.yml
 └── README.md
 ```
 
-Labs 05, 07, and 08 use externally hosted notebooks linked above. Lab 09 combines building extraction and street-level image segmentation; the large-language-model material is now Lab 10.
+Labs 05, 07, and 08 use externally hosted notebooks linked above. Lab 09 combines building extraction and street-level image segmentation; Lab 10 introduces large language models; Lab 11 develops AI agents from scratch and with LangGraph; and Lab 12 runs models locally with Ollama and builds retrieval-augmented generation (RAG).
 
 ## Using these materials
 
