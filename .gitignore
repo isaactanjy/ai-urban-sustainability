@@ -4,3 +4,4 @@
 # Local macOS metadata and Jupyter autosaves
 .DS_Store
 .ipynb_checkpoints/
+.env
